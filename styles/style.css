@@ -221,10 +221,9 @@ a {
 }
 
 .skills__icon {
-  height: 110px;
-  width: -webkit-max-content;
-  width: -moz-max-content;
-  width: max-content;
+  display: block;
+  max-height: 110px;
+  max-width: 100%;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
