@@ -7,6 +7,12 @@
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" href="styles/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -14,7 +20,15 @@
       href="https://fonts.googleapis.com/css2?family=Andika:wght@400;700&display=swap"
       rel="stylesheet"
     />
-    <title>Document</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="img/favicon-32x32.png"
+    />
+    <link rel="manifest" href="/site.webmanifest" />
+    <title>Сайдазимова Анастасия</title>
   </head>
   <body>
     <div class="wrapper">
@@ -91,24 +105,38 @@
             <p class="heading skills__heading">Стек технологий</p>
             <div class="skills__box">
               <div class="skills__item">
-                <img class="skills__icon" src="img/html.png" alt="" />
-                <p class="skills__description">HTML</p>
+                <img class="skills__icon" src="img/html.png" alt="html" />
+                <p class="skills__name">HTML</p>
+                <p class="skills__description">БЭМ, семантическая вёрстка</p>
               </div>
               <div class="skills__item">
-                <img class="skills__icon" src="img/css.png" alt="" />
-                <p class="skills__description">CSS</p>
+                <img class="skills__icon" src="img/css.png" alt="css" />
+                <p class="skills__name">CSS</p>
+                <p class="skills__description">SASS, flex, grid, анимации</p>
               </div>
               <div class="skills__item">
-                <img class="skills__icon" src="img/js.jpg" alt="" />
-                <p class="skills__description">JavaScript</p>
+                <img class="skills__icon" src="img/js.jpg" alt="js" />
+                <p class="skills__name">JavaScript</p>
+                <p class="skills__description">Работа с DOM</p>
               </div>
               <div class="skills__item">
-                <img class="skills__icon" src="img/react.png" alt="" />
-                <p class="skills__description">React</p>
+                <img class="skills__icon" src="img/git.svg" alt="git" />
+                <p class="skills__name">Git</p>
+                <p class="skills__description">GitHub, npm</p>
               </div>
               <div class="skills__item">
-                <img class="skills__icon" src="img/node.png" alt="" />
-                <p class="skills__description">Node.js</p>
+                <img class="skills__icon" src="img/react.png" alt="react" />
+                <p class="skills__name">React</p>
+                <p class="skills__description">
+                  Redux, хуки, функциональные компоненты
+                </p>
+              </div>
+              <div class="skills__item">
+                <img class="skills__icon" src="img/node.png" alt="node" />
+                <p class="skills__name">Node.js</p>
+                <p class="skills__description">
+                  Чтение и запись в файл, создание небольших серверов
+                </p>
               </div>
             </div>
           </div>
@@ -116,34 +144,130 @@
 
         <div class="projects" id="projects">
           <div class="cover_dark center">
-            <p class="heading projects__heading"></p>
+            <p class="heading projects__heading">Портфолио</p>
+            <div
+              id="carouselExampleControls"
+              class="carousel slide"
+              data-ride="carousel"
+            >
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <a
+                    class="projects__link"
+                    href="https://willskill-saydazimova.netlify.app/"
+                    target="_blank"
+                    >Адаптивный лендинг по макету Figma</a
+                  >
+                  <img class="d-block" src="img/nootris.png" alt="nootris" />
+                </div>
+
+                <div class="carousel-item">
+                  <a
+                    class="projects__link"
+                    href="https://nslyuma.github.io/"
+                    target="_blank"
+                    >Учебный проект Geekbrains - магазин одежды</a
+                  >
+                  <img class="d-block" src="img/shop.png" alt="shop" />
+                </div>
+
+                <div class="carousel-item">
+                  <a
+                    class="projects__link"
+                    href="https://landing-saydazimova.netlify.app/"
+                    target="_blank"
+                    >Адаптивный лендинг-портфолио</a
+                  >
+                  <img
+                    class="d-block"
+                    src="img/portfolio.png"
+                    alt="portfolio"
+                  />
+                </div>
+
+                <div class="carousel-item">
+                  <a
+                    class="projects__link"
+                    href="https://infotecs-react-saydazimova.netlify.app"
+                    target="_blank"
+                    >Приложение для создания списка задач на React</a
+                  >
+                  <img class="d-block" src="img/tasklist.png" alt="tasklist" />
+                </div>
+              </div>
+
+              <a
+                class="carousel-control-prev"
+                href="#carouselExampleControls"
+                role="button"
+                data-slide="prev"
+              >
+                <span
+                  class="carousel-control-prev-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="sr-only">Previous</span>
+              </a>
+
+              <a
+                class="carousel-control-next"
+                href="#carouselExampleControls"
+                role="button"
+                data-slide="next"
+              >
+                <span
+                  class="carousel-control-next-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="sr-only">Next</span>
+              </a>
+            </div>
+            <div class="projects__note">
+              *Слайдер создан с помощью Bootstrap
+            </div>
           </div>
         </div>
       </div>
 
       <footer class="contacts center" id="contacts">
         <div class="cover_light">
-          <p class="heading contacts__heading">Связаться со мной</p>
-          <a href=""
-            ><img class="contacts__icon" src="img/phone.svg" alt="phone"
-          /></a>
-          <a href=""
-            ><img class="contacts__icon" src="img/tg.svg" alt="telegram"
-          /></a>
-          <a href=""
-            ><img class="contacts__icon" src="img/vk.svg" alt="vk"
-          /></a>
-          <a href=""
-            ><img class="contacts__icon" src="img/mail.svg" alt="mail"
-          /></a>
-          <a href=""
-            ><img class="contacts__icon" src="img/gh.svg" alt="github"
-          /></a>
-          <a href=""
-            ><img class="contacts__icon" src="img/hh.svg" alt="headhunter"
-          /></a>
+          <div class="contacts__box">
+            <a href="tel:+79522420232"
+              ><img class="contacts__icon" src="img/phone.svg" alt="phone"
+            /></a>
+            <a href="https://t.me/nslyuma" target="_blank"
+              ><img class="contacts__icon" src="img/tg.svg" alt="telegram"
+            /></a>
+            <a href="mailto:saydazimova.ar@mail.ru"
+              ><img class="contacts__icon" src="img/mail.svg" alt="mail"
+            /></a>
+            <a href="https://github.com/NSLyuma" target="_blank"
+              ><img class="contacts__icon" src="img/gh.svg" alt="github"
+            /></a>
+            <a
+              href="https://spb.hh.ru/resume/618b1848ff07c0d0b10039ed1f756233617371"
+              target="_blank"
+              ><img class="contacts__icon" src="img/hh.svg" alt="headhunter"
+            /></a>
+          </div>
         </div>
       </footer>
     </div>
+
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>

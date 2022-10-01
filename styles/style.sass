@@ -21,7 +21,7 @@ body
     padding-top: 112px
 
 a
-    text-decoration: none
+    text-decoration: none !important
 
 .wrapper 
     display: flex
@@ -37,8 +37,8 @@ a
 
 .cover
     &_dark, &_light
-        padding-top: 110px
-        padding-bottom: 110px
+        padding-top: 100px
+        padding-bottom: 100px
     &_dark
         background-color: $background
 
@@ -66,11 +66,14 @@ a
     &__list
         display: flex
         justify-content: space-between
+        margin-bottom: 0 !important
+        width: 100%
     &__link
         font-size: 20px
         transition: all .2s
+        color: $light !important
         &:hover
-            color: $link
+            color: $link !important
 
 .main
     &:before
@@ -82,11 +85,6 @@ a
     &__box
         display: flex
         justify-content: space-between
-    &:before
-        display: block
-        content: ""
-        height: 110px
-        margin: -110px 0 0
     &__img
         height: 350px
         width: auto
@@ -133,21 +131,49 @@ a
     &__heading
         color: $dark
     &__box
+        display: grid
+        grid-template-columns: repeat(3, 1fr)
+        grid-gap: 20px
+    &__item
+        padding: 20px
         display: flex
-        justify-content: space-between
+        flex-direction: column
+        justify-content: center
+        align-items: center
     &__icon
         height: 110px
-        width: auto
-    &__description
+        width: max-content
+        align-self: center
+        margin-bottom: 10px
+    &__name, &__description
         color: $dark
+    &__description
+        font-size: 16px
+        line-height: 20px
 
 .projects
+    position: relative
     &:before
         display: block
         background-color: #fff
         content: ""
         height: 100px
         margin: -100px 0 0
+    &__link
+        color: $light !important
+        &:hover
+            color: $link !important
+    &__note
+        position: absolute
+        bottom: 30px
+        font-size: 16px
+        line-height: 20px
+
+.carousel-item
+    height: 400px
+    & > img
+        height: 90%
+        margin: 20px auto 0
 
 .contacts
     flex: 0 0 auto
@@ -157,6 +183,12 @@ a
         content: ""
         height: 100px
         margin: -100px 0 0
+    &__box
+        max-width: 700px
+        margin: 0 auto
+        display: flex
+        justify-content: space-between
     &__icon
         height: 50px
         width: auto
+        
