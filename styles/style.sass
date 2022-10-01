@@ -5,8 +5,8 @@
     padding: 0
     box-sizing: border-box
     list-style-type: none
-    font-family: "Andika", "Arial", sans-serif
-    font-weight: 400
+    font-family: "Nunito", "Arial", sans-serif
+    font-weight: 200
     font-size: 24px
     line-height: 30px
     color: $light
@@ -43,6 +43,7 @@ a
         background-color: $background
 
 .heading
+    font-weight: 400
     font-size: 42px
     line-height: 50px
     margin-bottom: 50px
@@ -70,6 +71,7 @@ a
         width: 100%
     &__link
         font-size: 20px
+        font-weight: 400 !important
         transition: all .2s
         color: $light !important
         &:hover
@@ -148,6 +150,7 @@ a
         margin-bottom: 10px
     &__name, &__description
         color: $dark
+        font-weight: 300
     &__description
         font-size: 16px
         line-height: 20px
@@ -192,4 +195,7 @@ a
     &__icon
         height: 50px
         width: auto
+        transition: transform .3s
+        &:hover
+            transform: scale(1.07)
         
